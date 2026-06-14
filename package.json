@@ -19,6 +19,7 @@
     "db:migrate:local": "wrangler d1 migrations apply cinemind --local",
     "db:migrate:remote": "wrangler d1 migrations apply cinemind --remote",
     "import:sheet": "tsx scripts/import-from-sheet.ts",
+    "import:history": "tsx scripts/import-history-from-sheet.ts",
     "setup:webhook": "tsx scripts/set-webhook.ts"
   },
   "dependencies": {
