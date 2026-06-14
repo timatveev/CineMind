@@ -19,7 +19,7 @@ crons = ["0 9 1 * *"]
 [[d1_databases]]
 binding = "DB"
 database_name = "cinemind"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_id = "62f74417-7aba-408d-91a7-7b97e2838d46"
 migrations_dir = "migrations"
 
 # ── KV namespace (cache, dedup, VIP status) ──
@@ -27,7 +27,7 @@ migrations_dir = "migrations"
 # then paste the returned id below.
 [[kv_namespaces]]
 binding = "CACHE"
-id = "REPLACE_WITH_KV_NAMESPACE_ID"
+id = "b7f348015d944daba65dad8cf1ca7aa5"
 
 # ── Non-secret vars (override per-environment if needed) ──
 # Secrets (TELEGRAM_TOKEN, GEMINI_API_KEY, TELEGRAM_WEBHOOK_SECRET, ...)
