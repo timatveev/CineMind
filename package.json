@@ -1,0 +1,43 @@
+{
+  "name": "cinemind",
+  "version": "1.0.0",
+  "description": "CineMind — AI-powered Telegram bot for personalized movie & series recommendations. Runs on Cloudflare Workers.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.ts\" \"scripts/**/*.ts\"",
+    "format": "prettier --write \"**/*.{ts,json,md}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate:local": "wrangler d1 migrations apply cinemind --local",
+    "db:migrate:remote": "wrangler d1 migrations apply cinemind --remote",
+    "import:sheet": "tsx scripts/import-from-sheet.ts",
+    "setup:webhook": "tsx scripts/set-webhook.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.36.4",
+    "grammy": "^1.32.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.5.30",
+    "@eslint/js": "^9.16.0",
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "@types/node": "^22.10.1",
+    "csv-parse": "^5.6.0",
+    "drizzle-kit": "^0.28.1",
+    "eslint": "^9.16.0",
+    "prettier": "^3.4.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0",
+    "vitest": "^2.1.8",
+    "wrangler": "^3.91.0"
+  }
+}

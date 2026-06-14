@@ -1,0 +1,38 @@
+name = "cinemind"
+main = "src/index.ts"
+compatibility_date = "2024-11-27"
+compatibility_flags = ["nodejs_compat"]
+
+# ── Webhook endpoint ──
+# Telegram will POST updates to https://<your-worker>.workers.dev/webhook
+# (set via: pnpm setup:webhook)
+workers_dev = true
+
+# ── Scheduled (cron) ──
+# Monthly digest: 09:00 UTC on the 1st of every month.
+[triggers]
+crons = ["0 9 1 * *"]
+
+# ── D1 database (users, history) ──
+# Create with:  wrangler d1 create cinemind
+# then paste the returned database_id below.
+[[d1_databases]]
+binding = "DB"
+database_name = "cinemind"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+# ── KV namespace (cache, dedup, VIP status) ──
+# Create with:  wrangler kv namespace create CACHE
+# then paste the returned id below.
+[[kv_namespaces]]
+binding = "CACHE"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+# ── Non-secret vars (override per-environment if needed) ──
+# Secrets (TELEGRAM_TOKEN, GEMINI_API_KEY, TELEGRAM_WEBHOOK_SECRET, ...)
+# are set via `wrangler secret put` and live in .dev.vars locally.
+[vars]
+MODEL_FAST = "gemini-2.5-flash"
+MODEL_SMART = "gemini-2.5-pro"
+DAILY_LIMIT = "5"

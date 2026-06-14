@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+
+# build & cloudflare
+dist/
+.wrangler/
+.dev.vars
+
+# secrets & local env
+*.local
+.env
+
+# editor / os
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+
+# generated data import (may contain user PII)
+migrations/*_data.sql
+
+# legacy Google Apps Script sources (kept out of the modern build)
+legacy/
+
+# large generated images
+assets/raw/
+*.png
