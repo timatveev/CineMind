@@ -78,8 +78,6 @@ async function main(): Promise<void> {
     `-- Generated: ${new Date().toISOString()}`,
     `-- Rows: ${dataRows.length}`,
     '',
-    'BEGIN TRANSACTION;',
-    '',
   ];
 
   for (const r of dataRows) {
@@ -107,7 +105,7 @@ async function main(): Promise<void> {
     );
   }
 
-  lines.push('', 'COMMIT;', '');
+  lines.push('');
   writeFileSync(OUT, lines.join('\n'), 'utf8');
   console.log(`Wrote ${dataRows.length} users to ${OUT}`);
   console.log(`Apply with: wrangler d1 execute cinemind --remote --file=${OUT}`);
