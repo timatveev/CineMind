@@ -71,7 +71,7 @@ test/                 # vitest
 ## 🚀 Запуск
 
 ### Требования
-- Node.js 20+ и `pnpm`
+- Node.js 22+ и `pnpm`
 - Аккаунт Cloudflare (`wrangler login`)
 - Токен бота от [@BotFather](https://t.me/BotFather)
 - API-ключ [Google AI Studio](https://aistudio.google.com/)
