@@ -17,8 +17,8 @@ BOT_USERNAME=CineMindBot
 GEMINI_API_KEY=AIza...
 
 # Gemini models
-MODEL_FAST=gemini-2.5-flash
-MODEL_SMART=gemini-2.5-pro
+MODEL_FAST=gemini-3.5-flash
+MODEL_SMART=gemini-3.5-flash
 
 # Free daily request limit per non-VIP user
 DAILY_LIMIT=5

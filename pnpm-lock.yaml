@@ -12,8 +12,8 @@ importers:
         specifier: ^0.36.4
         version: 0.36.4(@cloudflare/workers-types@4.20260613.1)
       grammy:
-        specifier: ^1.32.0
-        version: 1.44.0
+        specifier: 1.43.0
+        version: 1.43.0
     devDependencies:
       '@cloudflare/vitest-pool-workers':
         specifier: ^0.5.30
@@ -1066,8 +1066,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@grammyjs/types@3.28.0':
-    resolution: {integrity: sha512-4JvXCdxRZHCje0M4gHzLwtB4bLno3WD28xd8CNfk4POWIu73BFnSvGeW6OQ5gPem4eYTEwkD9yDaXssixl6tMQ==}
+  '@grammyjs/types@3.27.3':
+    resolution: {integrity: sha512-yUKMLliGsGbnxu96YUJ7km7B0zy4PzeH/Jvti5705R/LeKDMqkDV4DckMSt+OrliWQpTwQljHE0QLol5zgxBkg==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -1921,8 +1921,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  grammy@1.44.0:
-    resolution: {integrity: sha512-gGVykS5+c5f1tPV97LuU6IDRMawE2NzpwM9pNz58HQ35IZXDnYL3VOLvNzYognPSeBIOSzQXRu5w96V0aY8y8A==}
+  grammy@1.43.0:
+    resolution: {integrity: sha512-7dYm06A945mXuIk/5HUlSjeyIYChW8vCEiU2dkOKKqJJzwAWxTkCc91Eqbz7TgODh2rtFFKWI/fekowWHOkmjQ==}
     engines: {node: ^12.20.0 || >=14.13.1}
 
   has-flag@4.0.0:
@@ -3035,7 +3035,7 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@grammyjs/types@3.28.0': {}
+  '@grammyjs/types@3.27.3': {}
 
   '@humanfs/core@0.19.2':
     dependencies:
@@ -3832,9 +3832,9 @@ snapshots:
 
   globals@14.0.0: {}
 
-  grammy@1.44.0:
+  grammy@1.43.0:
     dependencies:
-      '@grammyjs/types': 3.28.0
+      '@grammyjs/types': 3.27.3
       abort-controller: 3.0.0
       debug: 4.4.3
       node-fetch: 2.7.0

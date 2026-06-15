@@ -1,0 +1,6 @@
+# Allow native build scripts (pnpm blocks them by default for supply-chain safety).
+# workerd = Cloudflare Workers runtime used by `wrangler dev`.
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true

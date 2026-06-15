@@ -33,6 +33,6 @@ id = "b7f348015d944daba65dad8cf1ca7aa5"
 # Secrets (TELEGRAM_TOKEN, GEMINI_API_KEY, TELEGRAM_WEBHOOK_SECRET, ...)
 # are set via `wrangler secret put` and live in .dev.vars locally.
 [vars]
-MODEL_FAST = "gemini-2.5-flash"
-MODEL_SMART = "gemini-2.5-pro"
+MODEL_FAST = "gemini-3.5-flash"
+MODEL_SMART = "gemini-3.5-flash"
 DAILY_LIMIT = "5"
